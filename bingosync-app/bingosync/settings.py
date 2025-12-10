@@ -234,9 +234,9 @@ INTERNAL_SOCKETS_URL = "127.0.0.1:8888"
 PUBLIC_SOCKETS_URL = "sockets.kobold60.com:8888"
 
 if IS_PROD:
-    SOCKETS_URL = "ws://" + PUBLIC_SOCKETS_URL
+    SOCKETS_URL = "wss://" + PUBLIC_SOCKETS_URL
 else:
-    SOCKETS_URL = "ws://" + PUBLIC_SOCKETS_URL
+    SOCKETS_URL = "ws://" + INTERNAL_SOCKETS_URL
 
 # used for publishing events from django to tornado, so can always go across localhost
 SOCKETS_PUBLISH_URL = "http://" + INTERNAL_SOCKETS_URL
