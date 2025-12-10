@@ -231,7 +231,7 @@ else:
 CSRF_TRUSTED_ORIGINS = ['https://caravan.kobold60.com', 'https://*.kobold60.com', 'https://*.127.0.0.1']
 
 INTERNAL_SOCKETS_URL = "127.0.0.1:8888"
-PUBLIC_SOCKETS_URL = "sockets.kobold60.com:8888"
+PUBLIC_SOCKETS_URL = "sockets.kobold60.com:8887"
 
 if IS_PROD:
     SOCKETS_URL = "wss://" + PUBLIC_SOCKETS_URL
