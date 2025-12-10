@@ -262,11 +262,11 @@
     background-image: linear-gradient(#dd3352, #c32a45 10%, #b6102e);
 }
 
-.orangesquare {
+.bluesquare {
     background-image: linear-gradient(#0d48b5, #022b75);
 }
 
-.bluesquare {
+.yellowsquare {
     background-image: linear-gradient(#f8e009, #cab602);
 }
 
@@ -282,15 +282,15 @@
     background-image: linear-gradient(#fdc060 20%, #be7e15);
 }
 
-.tealsquare {
+.mintsquare {
     background-image: linear-gradient(#80c786 75%, #4b9651);
 }
 
-.navysquare {
+.cyansquare {
     background-image: linear-gradient(#5daafd, #47a9e2 60%, #088CBD);
 }
 
-.yellowsquare {
+.orangesquare {
     background-image: linear-gradient(#ff8520 75%, #c75f0a);
 }
 
