@@ -231,12 +231,12 @@ else:
 CSRF_TRUSTED_ORIGINS = ['https://caravan.kobold60.com', 'https://*.kobold60.com', 'https://*.127.0.0.1']
 
 INTERNAL_SOCKETS_URL = "127.0.0.1:8888"
-PUBLIC_SOCKETS_URL = "sockets.kobold60.com"
+PUBLIC_SOCKETS_URL = "http://sockets.kobold60.com"
 
 if IS_PROD:
     SOCKETS_URL = "ws://" + PUBLIC_SOCKETS_URL
 else:
-    SOCKETS_URL = "ws://" + INTERNAL_SOCKETS_URL
+    SOCKETS_URL = "ws://" + PUBLIC_SOCKETS_URL
 
 # used for publishing events from django to tornado, so can always go across localhost
 SOCKETS_PUBLISH_URL = "http://" + INTERNAL_SOCKETS_URL
