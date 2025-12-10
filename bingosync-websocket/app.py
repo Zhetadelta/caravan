@@ -180,13 +180,13 @@ class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
         self.last_pong = datetime.datetime.now()
 
     def on_message(self, message):
-        try:
-            message_dict = json.loads(message)
-            socket_key = message_dict["socket_key"]
-            room_uuid, player_uuid = load_player_data(socket_key)
-            ROUTER.register(room_uuid, player_uuid, self)
-        except:
-            self.send('{"type": "error", "error": "unable to authenticate, try refreshing"}')
+        #try:
+        message_dict = json.loads(message)
+        socket_key = message_dict["socket_key"]
+        room_uuid, player_uuid = load_player_data(socket_key)
+        ROUTER.register(room_uuid, player_uuid, self)
+        #except:
+            #self.send('{"type": "error", "error": "unable to authenticate, try refreshing"}')
 
     def on_close(self):
         ROUTER.unregister(self)
