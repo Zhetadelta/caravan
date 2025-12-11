@@ -255,7 +255,7 @@
 }
 
 .greensquare {
-    background-image: linear-gradient(#3af870 10%, #237e3d 60%, #2E6F40);
+    background-image: linear-gradient(#3af870 10%, #237e3d 35%, #237e3d 80% #2E6F40);
 }
 
 .redsquare {
@@ -263,15 +263,15 @@
 }
 
 .orangesquare {
-    background-image: linear-gradient(#6294f1 10%,#0d48b5, #022b75);
+    background-image: linear-gradient(#6294f1 10%,#0d48b5 35%, #0d48b5 80%, #022b75);
 }
 
 .bluesquare {
-    background-image: linear-gradient(#f0e15a 10%, #f8e009, #cab602);
+    background-image: linear-gradient(#f8e009, #cab602);
 }
 
 .purplesquare {
-    background-image: linear-gradient(#faac75 10%, #cd560b 35%, #af7971);
+    background-image: linear-gradient(#faac75 10%, #cd560b 35%, #cd560b 80%, #af7971);
 }
 
 .pinksquare {
@@ -291,7 +291,7 @@
 }
 
 .yellowsquare {
-    background-image: linear-gradient(#b8aad9 20%, #7962a3 80%, #93718c);
+    background-image: linear-gradient(#b8aad9 20%, #7962a3 40%, #7962a3 80%, #93718c);
 }
 
 .starred {
