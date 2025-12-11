@@ -279,11 +279,11 @@
 }
 
 .brownsquare {
-    background-image: linear-gradient(#fdc060 20%, #be7e15);
+    background-image: linear-gradient(#c5923f 20%, #a1680c);
 }
 
 .tealsquare {
-    background-image: linear-gradient(#80c786 75%, #4b9651);
+    background-image: linear-gradient(#80c786 75%, #37793c);
 }
 
 .navysquare {
@@ -291,7 +291,7 @@
 }
 
 .yellowsquare {
-    background-image: linear-gradient(#b8aad9 5%, #7962a3 30%, #6c5c8a 80%, #93718c);
+    background-image: linear-gradient(#b8aad9 5%, #9680c0 30%, #8677a3 80%, #93718c);
 }
 
 .starred {
