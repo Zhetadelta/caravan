@@ -1,27 +1,25 @@
-Bingosync.com
+Caravan, a fork of Bingosync.com
 ===
 
-This is the repository powering [bingosync.com](http://bingosync.com/),
-a web application that lets people collaboratively work on "bingo boards"
-when speedrunning games.
+This is the repository powering [caravan](https://caravan.kobold60.com/),
+a web application that lets people collaboratively work on 6x6 "bingo boards".
 
-For more information on speedrunning and bingo, you can read:
-  - [the bingosync about page](http://bingosync.com/about)
-  - [the speedrunslive faq](https://www.speedrunslive.com/rules-faq/faq)
-  - [the about section of an SRL bingo card](https://www.speedrunslive.com/tools/bingo/oot)
+If you're not here from the silksong bingo community, hi! The generators should still work.
 
-#### Fun Implementation Details! :D
+I think.
 
-Bingosync is implemented using a combination of the [django](https://www.djangoproject.com/)
-and [tornado](http://www.tornadoweb.org/) web servers. The django web server
+Custom boards expect a 36-long list now to accomodate the bigger board.
+
+#### Not so Fun Implementation Details! :D
+
+Caravan, as a fork of bingosync, is implemented using a combination of the [django](https://www.djangoproject.com/)
+and [tornado](http://www.tornadoweb.org/) web servers written by the original author [kbuzsaki](https://github.com/kbuzsaki/). The django web server
 (bingosync-app) hosts the main website content, serves most of the pages,
 and talks to the database. The tornado web server (bingosync-websocket)
 maintains all websocket connections to the site and passes messages along
 to the clients in a "publish and subscribe" kind of model.
 
-The actual site is hosted on one of my personal machines. It's running behind 
-an [nginx](http://wiki.nginx.org/Main) proxy that serves static files and splits
-traffic to the django and tornado servers. I use [postgres](http://www.postgresql.org/)
-for the database. Conveniently, this machine is the same one that I run 
-[bingobot](https://github.com/kbuzsaki/bingobot) off of. Maybe there's some 
-opportunity for integration there in the future :)
+The actual site is hosted on a DigitalOcean droplet. It's running behind 
+an apache virtualhost. I use [postgres](http://www.postgresql.org/)
+for the database. This machine also hosts [bingyflea](https://github.com/Zhetadelta/Silksong.BingoGenerator),
+which is the primary way we currently interact with caravan.
