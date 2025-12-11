@@ -271,7 +271,7 @@
 }
 
 .purplesquare {
-    background-image: linear-gradient(#822dbf, #7120ab);
+    background-image: linear-gradient(#faac75 20%, #cd560b 80%, #af7971);
 }
 
 .pinksquare {
@@ -291,7 +291,7 @@
 }
 
 .yellowsquare {
-    background-image: linear-gradient(#ff8520 75%, #c75f0a);
+    background-image: linear-gradient(#b8aad9 20%, #7962a3 80%, #93718c);
 }
 
 .starred {
@@ -403,7 +403,7 @@
 }
 
 .purpleplayer {
-    color: #a647eb;
+    color: #cd560b;
 }
 
 .navyplayer {
@@ -423,7 +423,7 @@
 }
 
 .yellowplayer {
-    color: #ff8520;
+    color: #685094;
 }
 
 .color-chooser {
