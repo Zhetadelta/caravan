@@ -13,6 +13,10 @@ var ColorChooser = (function(){
             this.setChosenColor(playerJson.color);
             this.$choosers.on("click", function(ev) { that.clickColor(ev, $(this)); });
         }
+
+        this.$choosers.each(function(idx, chooser) {
+            chooser.innerText = getDisplayColor(chooser.getAttribute("squareColor"));
+        });
         this.$collapseButton.on("mousedown", function(ev) { that.toggleCollapse(ev); });
     };
 

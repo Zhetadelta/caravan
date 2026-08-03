@@ -41,7 +41,8 @@ var ChatPanel = (function(){
             var playerColorClass = getPlayerColorClass(json["player_color"]);
             var playerName = $("<span>", {"class": playerColorClass, text: json["player"]["name"]}).toHtml();
             var newColorClass = getPlayerColorClass(json["color"]);
-            var colorName = $("<span>", {"class": "color-name " + newColorClass, text: json["color"]}).toHtml();
+            var colorDisplayName = getDisplayColor(json["color"]);
+            var colorName = $("<span>", {"class": "color-name " + newColorClass, text: colorDisplayName}).toHtml();
             var colorMessage = playerName + " changed team to " + colorName;
             return $("<div>", {"class": "color-message", html: timeHtml + " " + colorMessage}).toHtml();
         }
