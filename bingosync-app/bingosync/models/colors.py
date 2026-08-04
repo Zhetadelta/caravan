@@ -55,7 +55,7 @@ class Color(Enum):
 
     @property
     def goal_class(self):
-        return self.name + "square"
+        return self.name + "-square"
 
     @property
     def player_class(self):

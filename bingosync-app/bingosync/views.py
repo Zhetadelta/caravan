@@ -230,7 +230,7 @@ def goal_selected(request):
     if not goal_event:
         return HttpResponseBadRequest("Blocked by Lockout")
     publish_goal_event(goal_event)
-    return HttpResponse("Recieved data: " + str(data))
+    return HttpResponse("Received data: " + str(data))
 
 @csrf_exempt
 def chat_message(request):
@@ -243,7 +243,7 @@ def chat_message(request):
     chat_event = ChatEvent(player=player, player_color_value=player.color.value, body=text)
     chat_event.save()
     publish_chat_event(chat_event)
-    return HttpResponse("Recieved data: " + str(data))
+    return HttpResponse("Received data: " + str(data))
 
 @csrf_exempt
 def select_color(request):
